@@ -1,24 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
 } from 'react-native';
 
 export default class CardImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      calc_height: 0
-    }
+      calc_height: 0,
+    };
   }
-  render () {
+  render() {
     const newStyle = this.props.style || {};
     return (
-      <View style={[styles.cardImage, newStyle]} onLayout={(e)=>{this.setState({calc_height: e.nativeEvent.layout.width*9/16});}}>
-        <Image source={this.props.source} resizeMode="stretch" resizeMethod="resize" style={[styles.imageContainer,  {height: this.state.calc_height}]}>
-          {this.props.title!==undefined &&
+      <View style={[styles.cardImage, newStyle]} onLayout={(e) => { this.setState({ calc_height: e.nativeEvent.layout.width * 9 / 16 }); }}>
+        <Image source={this.props.source} resizeMode="stretch" resizeMethod="resize" style={[styles.imageContainer, { height: this.state.calc_height }]}>
+          {this.props.title !== undefined &&
             <Text style={styles.imageTitleText}>{this.props.title}</Text>
           }
         </Image>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     marginBottom: 16,
     justifyContent: 'center',
-    alignItems: 'stretch'
+    alignItems: 'stretch',
   },
   imageContainer: {
     flex: 1,
@@ -44,10 +44,10 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingBottom: 16,
     paddingTop: 16,
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   imageTitleText: {
     fontSize: 24,
-    color: 'rgba(255 ,255 ,255 , 0.87)'
+    color: 'rgba(255 ,255 ,255 , 0.87)',
   }
 });
