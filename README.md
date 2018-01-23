@@ -15,7 +15,7 @@ npm install --save react-native-cards
 
 Import the components like so:  
 ```javascript
-import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 'react-native-material-cards'
+import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards'
 ```
 
 Then insert the card in your code:
