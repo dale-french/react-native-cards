@@ -1,33 +1,31 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
-  View
+  View,
 } from 'react-native';
 
 export default class CardAction extends Component {
 
   renderChildren() {
     let returnChildren = this.props.children;
-    if(this.props.inColumn===true) {
+    if (this.props.inColumn === true) {
       returnChildren = React.Children.map(returnChildren, (child) => {
-        if(child.type.name==="CardButton") {
+        if (child.type.name === 'CardButton') {
           return React.cloneElement(child, {
-            inColumn: true
+            inColumn: true,
           });
         }
-        else {
-          return child;
-        }
-      })
+        return child;
+      });
     }
     return returnChildren;
   }
 
-  render () {
+  render() {
     const newStyle = this.props.style || {};
-    let directionStyle = this.props.inColumn===true ? styles.cardActionInColumn : styles.cardActionInRow;
+    const directionStyle = this.props.inColumn === true ? styles.cardActionInColumn : styles.cardActionInRow;
     return (
-      <View style={(this.props.separator)&&(!this.props.isDark) ? [directionStyle, styles.separatorAdd, newStyle] : [directionStyle, newStyle]}>
+      <View style={(this.props.separator) && (!this.props.isDark) ? [directionStyle, styles.separatorAdd, newStyle] : [directionStyle, newStyle]}>
         {this.renderChildren()}
       </View>
     );
@@ -40,16 +38,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
   },
   cardActionInColumn: {
     flexDirection: 'column',
     alignItems: 'stretch',
     justifyContent: 'flex-start',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
   },
   separatorAdd: {
     borderTopColor: '#E9E9E9',
-    borderTopWidth: 1
-  }
+    borderTopWidth: 1,
+  },
 });
