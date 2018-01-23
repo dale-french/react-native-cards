@@ -1,0 +1,5 @@
+.env
+db
+node_modules
+components/routes/_*
+/npm-debug.log

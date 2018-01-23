@@ -1,0 +1,44 @@
+{
+  "name": "react-native-cards",
+  "version": "1.0.0",
+  "description": "A customizable material design card component for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --fix ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dale-french/react-native-cards.git"
+  },
+  "keywords": [
+    "cards",
+    "material",
+    "design",
+    "android",
+    "ios",
+    "card",
+    "react-native"
+  ],
+  "author": "dale-drench",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dale-french/react-native-cards/issues"
+  },
+  "homepage": "https://github.com/dale-french/react-native-cards#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=15.3.1 || >=16.0.0-beta.5",
+    "react-native": "*"
+  }
+}
