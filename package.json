@@ -1,7 +1,7 @@
 {
   "name": "react-native-cards",
   "version": "1.1.1",
-  "description": "A customizable material design card component for React Native",
+  "description": "A highly customizable material design card component for React Native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,15 +12,15 @@
     "url": "git+https://github.com/dale-french/react-native-cards.git"
   },
   "keywords": [
+    "react-native",
+    "material-design",
+    "react-native-component",
+    "material-cards",
     "cards",
-    "material",
-    "design",
-    "android",
     "ios",
-    "card",
-    "react-native"
+    "android"
   ],
-  "author": "dale-drench",
+  "author": "Dale French",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dale-french/react-native-cards/issues"
