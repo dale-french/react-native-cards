@@ -13,10 +13,11 @@ See [Google Material Design](https://material.io/guidelines/components/cards.htm
 
 ### Installation
 
+Install using npm:
 ```
 npm install --save react-native-cards
 ```
-or
+or install using Yarn
 ```
 yarn add react-native-cards
 ```
@@ -34,7 +35,7 @@ Then insert the card in your code:
 
   <Card>
     <CardImage 
-      source={{uri: 'http://www.travelstart.co.za/blog/wp-content/uploads/2014/07/Camera360_2014_4_13_065505_jpg-1024x576.jpg'}} 
+      source={{uri: 'http://bit.ly/2GfzooV'}} 
       title="Top 10 South African beaches"
     />
     <CardTitle
