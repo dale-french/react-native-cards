@@ -1,21 +1,31 @@
-# react-native-cards
-A customizable material design card component for React Native. Forked from [SiDevesh](https://github.com/SiDevesh/React-Native-Material-Cards).
 
-![Images](http://i.imgur.com/iDym7bI.png)
+# React Native Cards [![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square)][![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square)](https://badge.fury.io/js/react-native) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+
+A customizable material design card component for React Native.(https://github.com/SiDevesh/React-Native-Material-Cards).
+
+
+![Images](https://preview.ibb.co/cW8A1w/screenshots.png)
 
 See [Google Material Design](https://material.io/guidelines/components/cards.html) for more info on Cards.
 
-## Installation
+## Get Started
+
+
+### Installation
 
 ```
 npm install --save react-native-cards
+```
+or
+```
+yarn add react-native-cards
 ```
 
 ## Basic Usage
 
 Import the components like so:  
 ```javascript
-import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards'
+import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards';
 ```
 
 Then insert the card in your code:
