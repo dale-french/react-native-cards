@@ -1,15 +1,13 @@
 
-# React Native Cards [![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square)][![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square)](https://badge.fury.io/js/react-native) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+# React Native Cards ![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square)]![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square)(https://badge.fury.io/js/react-native) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
-A customizable material design card component for React Native.(https://github.com/SiDevesh/React-Native-Material-Cards).
-
+A highly customizable material design card component for React Native.
 
 ![Images](https://preview.ibb.co/cW8A1w/screenshots.png)
 
 See [Google Material Design](https://material.io/guidelines/components/cards.html) for more info on Cards.
 
 ## Get Started
-
 
 ### Installation
 
@@ -30,31 +28,34 @@ import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 
 
 Then insert the card in your code:
 ```js
-<Card>
-  <CardImage 
-    source={{uri: 'http://placehold.it/480x270'}} 
-    title="Above all i am here"
-  />
-  <CardTitle 
-    title="This is a title" 
-    subtitle="This is subtitle"
-   />
-  <CardContent text="Your device will reboot in few seconds once successful, be patient meanwhile" />
-  <CardAction 
-    separator={true} 
-    inColumn={false}>
-    <CardButton
-      onPress={() => {}}
-      title="Push"
-      color="blue"
+<ScrollView>
+
+  <Card>
+    <CardImage 
+      source={{uri: 'http://www.travelstart.co.za/blog/wp-content/uploads/2014/07/Camera360_2014_4_13_065505_jpg-1024x576.jpg'}} 
+      title="Top 10 South African beaches"
     />
-    <CardButton
-      onPress={() => {}}
-      title="Later"
-      color="blue"
+    <CardTitle
+      subtitle="Number 6"
     />
-  </CardAction>
-</Card>
+    <CardContent text="Clifton, Western Cape" />
+    <CardAction 
+      separator={true} 
+      inColumn={false}>
+      <CardButton
+        onPress={() => {}}
+        title="Share"
+        color="#FEB557"
+      />
+      <CardButton
+        onPress={() => {}}
+        title="Explore"
+        color="#FEB557"
+      />
+    </CardAction>
+  </Card>
+
+</ScrollView>
 ```
 
 ## Card Component Options
@@ -104,6 +105,7 @@ Then insert the card in your code:
 | `onPress` | `function` | The function to be called when button is pressed | `noop` (defined in [`src/utils`](https://github.com/SiDevesh/React-Native-Material-Cards/blob/master/src/utils/index.js)) |
 | `style` | `object` | The style object to be merged with the default style | `undefined` |
 
-### ToDo
+### To Do
+* Add side media to cards
 
 PRs are welcome :)
