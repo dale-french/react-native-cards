@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     color: 'rgba(0 ,0 ,0 , 0.87)',
   },
   lightText: {
-    color: 'rgba(255 ,255 ,255 , 0.87)',
+    color: 'rgba(255 ,255 ,255 , 1)',
   },
   cardContent: {
     flex: 1,

@@ -3,6 +3,7 @@ import {
   StyleSheet,
   View,
   Image,
+  Platform,
 } from 'react-native';
 
 export default class Card extends Component {
@@ -127,6 +128,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
     justifyContent: 'flex-start',
     margin: 5,
+    ...Platform.select({
+      ios: {
+        shadowColor: 'rgba(0,0,0, .2)',
+        shadowOffset: { height: 0, width: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 1,
+      },
+      android: {
+        elevation: 1,
+      },
+    }),
   },
   mediaContainer: {
     flex: 1,
@@ -141,8 +153,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'stretch',
     justifyContent: 'flex-end',
-    borderBottomLeftRadius: 2,
-    borderBottomRightRadius: 2,
+    borderRadius: 2,
   },
   card: {
     backgroundColor: '#fff',
