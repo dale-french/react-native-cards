@@ -1,5 +1,7 @@
 
-# React Native Cards ![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square)]![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square)(https://badge.fury.io/js/react-native) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+# React Native Cards 
+
+![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square)![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square)![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 A highly customizable material design card component for React Native.
 
