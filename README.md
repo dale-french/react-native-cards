@@ -3,11 +3,11 @@
 
 ![npm version](https://img.shields.io/npm/v/react-native-cards.svg?style=flat-square) ![npm downloads](https://img.shields.io/npm/dm/react-native-cards.svg?style=flat-square) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-A highly customizable material design card component for React Native.
-
-![Images](https://preview.ibb.co/cW8A1w/screenshots.png)
+###### A highly customizable material design card component for React Native.
 
 See [Google Material Design](https://material.io/guidelines/components/cards.html) for more info on Cards.
+
+![Images](https://preview.ibb.co/cW8A1w/screenshots.png)
 
 ## Get Started
 
@@ -108,7 +108,5 @@ Then insert the card in your code:
 | `onPress` | `function` | The function to be called when button is pressed | `noop` (defined in [`src/utils`](https://github.com/SiDevesh/React-Native-Material-Cards/blob/master/src/utils/index.js)) |
 | `style` | `object` | The style object to be merged with the default style | `undefined` |
 
-### To Do
-* Add side media to cards
-
-PRs are welcome :)
+### Todo (PRs welcome!)
+- [ ] Add side media to cards - see [here](https://material.io/guidelines/components/cards.html#cards-usage)
