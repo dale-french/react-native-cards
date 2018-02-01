@@ -90,7 +90,7 @@ Then insert the card in your code:
 | ------------- |-------------| -----| -----|
 | `source` | `object` | The image to be shown, passed to Image's `source` prop | `undefined` |
 | `style` | `object` | The style object to be merged with the default style | `undefined` |
-| `resizeMode` | `string` | Determines how to resize the image when the frame doesn't match the raw image dimensions | `stretch` |
+| `resizeMode` | `string` | Determines how to resize the image when the frame doesn't match the raw image dimensions | `cover` |
 | `resizeMethod` | `string` | Resize the image when the image's dimensions differ from the image view's dimensions. | `resize` |
 
 ## CardAction Component Options
